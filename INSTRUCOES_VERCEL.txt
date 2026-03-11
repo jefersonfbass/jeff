@@ -1,0 +1,19 @@
+COMO SUBIR NA VERCEL:
+
+1. Conecte seu GitHub à Vercel (Recomendado):
+   - Suba este projeto para um repositório no GitHub.
+   - No painel da Vercel, clique em "Add New" -> "Project".
+   - Importe o repositório.
+   - A Vercel detectará automaticamente que é um projeto Vite.
+   - Clique em "Deploy".
+
+2. Usando a Vercel CLI (Manual):
+   - Instale a CLI: `npm i -g vercel`
+   - Rode `vercel` na pasta raiz do projeto.
+
+Configurações automáticas detectadas:
+- Framework Preset: Vite
+- Build Command: npm run build
+- Output Directory: dist
+
+O arquivo 'vercel.json' já foi incluído para garantir que as rotas do React funcionem corretamente.

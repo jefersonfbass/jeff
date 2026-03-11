@@ -1,6 +1,6 @@
 PRONTO PARA BAIXAR!
 Os arquivos foram gerados novamente.
-Verifique a pasta 'ARQUIVOS_PARA_HOSTINGER' dentro do ZIP.
+Verifique a pasta 'dist' dentro do ZIP.
 Ela deve conter:
 - index.html
 - .htaccess

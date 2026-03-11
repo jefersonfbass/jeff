@@ -9,7 +9,7 @@ export default defineConfig(({mode}) => {
     base: './',
     plugins: [react(), tailwindcss()],
     build: {
-      outDir: 'ARQUIVOS_PARA_HOSTINGER',
+      outDir: 'dist',
       emptyOutDir: true,
     },
     define: {

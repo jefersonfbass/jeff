@@ -2,15 +2,15 @@ INSTRUÇÕES PARA HOSPEDAGEM NO HOSTINGER (USANDO O ZIP):
 
 1. Baixe o arquivo .ZIP do projeto.
 2. Abra o arquivo .ZIP no seu computador.
-3. Procure pela pasta chamada 'ARQUIVOS_PARA_HOSTINGER'.
-4. Entre na pasta 'ARQUIVOS_PARA_HOSTINGER'. Você verá os seguintes itens:
+3. Procure pela pasta chamada 'dist'.
+4. Entre na pasta 'dist'. Você verá os seguintes itens:
    - index.html
    - .htaccess
    - assets (pasta)
 
 5. No Gerenciador de Arquivos do Hostinger, entre na pasta 'public_html'.
-6. Envie (Upload) TUDO o que está DENTRO da pasta 'ARQUIVOS_PARA_HOSTINGER' para a 'public_html'.
+6. Envie (Upload) TUDO o que está DENTRO da pasta 'dist' para a 'public_html'.
 
-IMPORTANTE: Não envie a pasta 'ARQUIVOS_PARA_HOSTINGER' inteira. Envie apenas o CONTEÚDO dela. No final, o arquivo 'index.html' deve estar diretamente dentro da 'public_html'.
+IMPORTANTE: Não envie a pasta 'dist' inteira. Envie apenas o CONTEÚDO dela. No final, o arquivo 'index.html' deve estar diretamente dentro da 'public_html'.
 
-O arquivo .htaccess já está incluído na pasta 'ARQUIVOS_PARA_HOSTINGER' para garantir que seu site funcione perfeitamente.
+O arquivo .htaccess já está incluído na pasta 'dist' para garantir que seu site funcione perfeitamente.
