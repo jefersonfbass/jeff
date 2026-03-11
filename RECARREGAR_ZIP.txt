@@ -1,0 +1,7 @@
+PRONTO PARA BAIXAR!
+Os arquivos foram gerados novamente.
+Verifique a pasta 'ARQUIVOS_PARA_HOSTINGER' dentro do ZIP.
+Ela deve conter:
+- index.html
+- .htaccess
+- pasta assets (com o CSS e JS)

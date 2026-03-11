@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-script: "Pacifico", cursive;
+  
+  --color-brand-pink: #FF2D78;
+  --color-brand-orange: #FF6B00;
+  --color-brand-green: #28A745;
+  --color-brand-yellow: #FFD600;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-900 overflow-x-hidden;
+  }
+}
+
+.shadow-strong {
+  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-button {
+  box-shadow: 0 6px 0px 0px #1e7e34;
+}
+
+.shadow-button:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0px 0px #1e7e34;
+}
+
+.shadow-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0px 0px #1e7e34;
+}
