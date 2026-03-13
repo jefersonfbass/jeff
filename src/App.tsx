@@ -117,28 +117,38 @@ const SectionTitle = ({ children, className = "" }: { children: React.ReactNode,
 );
 
 const CTAButton = ({ children, className = "", pulse = false, onClick, href }: { children: React.ReactNode, className?: string, pulse?: boolean, onClick?: () => void, href?: string }) => {
-  const button = (
+  const baseStyles = "bg-brand-green text-white font-display font-black text-xl md:text-2xl py-5 px-10 rounded-full shadow-button uppercase tracking-wider cursor-pointer text-center flex items-center justify-center transition-all";
+  
+  const motionProps = {
+    whileHover: { scale: 1.05 },
+    whileTap: { scale: 0.95 },
+    animate: pulse ? { scale: [1, 1.05, 1] } : {},
+    transition: pulse ? { duration: 2, repeat: Infinity, ease: "easeInOut" } : {},
+  };
+
+  if (href) {
+    return (
+      <motion.a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${baseStyles} inline-block w-full no-underline ${className}`}
+        {...motionProps}
+      >
+        {children}
+      </motion.a>
+    );
+  }
+
+  return (
     <motion.button
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      animate={pulse ? { scale: [1, 1.05, 1] } : {}}
-      transition={pulse ? { duration: 2, repeat: Infinity, ease: "easeInOut" } : {}}
       onClick={onClick}
-      className={`bg-brand-green text-white font-display font-black text-xl md:text-2xl py-5 px-10 rounded-full shadow-button uppercase tracking-wider cursor-pointer ${className}`}
+      className={`${baseStyles} ${className}`}
+      {...motionProps}
     >
       {children}
     </motion.button>
   );
-
-  if (href) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className="inline-block w-full">
-        {button}
-      </a>
-    );
-  }
-
-  return button;
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string; key?: React.Key }) => {
@@ -655,7 +665,7 @@ export default function App() {
               <CTAButton 
                 className="w-full py-4 text-lg" 
                 pulse 
-                href="https://checkout.materialinteligente.com/VCCL1O8SCUVO"
+                href="https://checkout.materialinteligente.com/VCCL1O8SCV4L"
               >
                 QUERO O BÁSICO
               </CTAButton>
@@ -703,7 +713,7 @@ export default function App() {
               <CTAButton 
                 className="w-full py-4 text-xl" 
                 pulse 
-                href="https://checkout.materialinteligente.com/VCCL1O8SCUVV"
+                href="https://checkout.materialinteligente.com/VCCL1O8SCV6C"
               >
                 QUERO O COMPLETO!
               </CTAButton>
