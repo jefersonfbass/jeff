@@ -132,6 +132,13 @@ const CTAButton = ({ children, className = "", pulse = false, onClick, href }: {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        data-utmify-checkout
+        onClick={() => {
+          const win = window as any;
+          if (win.pixelId && win.pixel) {
+            win.pixel.track("InitiateCheckout");
+          }
+        }}
         className={`${baseStyles} inline-block w-full no-underline ${className}`}
         {...motionProps}
       >
