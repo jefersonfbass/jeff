@@ -132,7 +132,8 @@ const CTAButton = ({ children, className = "", pulse = false, onClick, href }: {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        data-utmify-checkout
+        data-utmify-checkout="true"
+        id={href.includes('V4L') ? 'checkout-basico' : 'checkout-completo'}
         onClick={() => {
           const win = window as any;
           if (win.pixelId && win.pixel) {
@@ -661,10 +662,10 @@ export default function App() {
               </div>
 
               <div className="mb-8">
-                <p className="text-lg line-through text-slate-400 mb-1">De R$ 27,00</p>
+                <p className="text-lg line-through text-slate-400 mb-1">De R$ 34,90</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-4xl">
-                    R$ 10,00
+                    R$ 17,90
                   </span>
                 </div>
               </div>
@@ -709,10 +710,10 @@ export default function App() {
               </div>
 
               <div className="mb-8">
-                <p className="text-lg line-through text-slate-400 mb-1">De R$ 47,00</p>
+                <p className="text-lg line-through text-slate-400 mb-1">De R$ 57,00</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-5xl">
-                    R$ 17,90
+                    R$ 27,90
                   </span>
                 </div>
               </div>
