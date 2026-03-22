@@ -135,9 +135,14 @@ const CTAButton = ({ children, className = "", pulse = false, onClick, href }: {
         data-utmify-checkout="true"
         id={href.includes('V4L') ? 'checkout-basico' : 'checkout-completo'}
         onClick={() => {
-          const win = window as any;
-          if (win.pixelId && win.pixel) {
-            win.pixel.track("InitiateCheckout");
+          try {
+            const win = window as any;
+            if (win.pixelId && win.pixel) {
+              win.pixel.track("InitiateCheckout");
+            }
+          } catch (e) {
+            // Silently fail if tracking is blocked, allowing the link to work
+            console.warn("Tracking blocked, but proceeding to checkout.");
           }
         }}
         className={`${baseStyles} inline-block w-full no-underline ${className}`}
