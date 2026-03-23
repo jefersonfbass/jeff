@@ -14,6 +14,18 @@
       var a = document.createElement("script");
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
+
+      // Global listener for checkout clicks to prevent blocking
+      document.addEventListener('click', function(e) {
+        var target = e.target.closest('[data-utmify-checkout]');
+        if (target && window.pixel) {
+          try {
+            window.pixel.track("InitiateCheckout");
+          } catch (err) {
+            console.warn("Tracking failed but proceeding...");
+          }
+        }
+      }, true);
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lancheira Saudável</title>

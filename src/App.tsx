@@ -128,28 +128,24 @@ const CTAButton = ({ children, className = "", pulse = false, onClick, href }: {
 
   if (href) {
     return (
-      <motion.a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-utmify-checkout="true"
-        id={href.includes('V4L') ? 'checkout-basico' : 'checkout-completo'}
-        onClick={() => {
-          try {
-            const win = window as any;
-            if (win.pixelId && win.pixel) {
-              win.pixel.track("InitiateCheckout");
-            }
-          } catch (e) {
-            // Silently fail if tracking is blocked, allowing the link to work
-            console.warn("Tracking blocked, but proceeding to checkout.");
-          }
-        }}
-        className={`${baseStyles} inline-block w-full no-underline ${className}`}
-        {...motionProps}
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        animate={pulse ? { scale: [1, 1.05, 1] } : {}}
+        transition={pulse ? { duration: 2, repeat: Infinity, ease: "easeInOut" } : {}}
+        className="w-full"
       >
-        {children}
-      </motion.a>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-utmify-checkout="true"
+          id={href.includes('V4L') ? 'checkout-basico' : 'checkout-completo'}
+          className={`${baseStyles} inline-block w-full no-underline ${className}`}
+        >
+          {children}
+        </a>
+      </motion.div>
     );
   }
 
