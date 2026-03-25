@@ -663,7 +663,7 @@ export default function App() {
               </div>
 
               <div className="mb-8">
-                <p className="text-lg line-through text-slate-400 mb-1">De R$ 34,90</p>
+                <p className="text-lg line-through text-slate-400 mb-1">De R$ 37,90</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-4xl">
                     R$ 17,90
@@ -701,7 +701,9 @@ export default function App() {
                   "Receitinhas com frutas e vegetais",
                   "Bebidas divertidas e saudáveis",
                   "Delícias veganas",
-                  "Manual de Higienização dos potes e garrafas"
+                  "Manual de Higienização dos potes e garrafas",
+                  "Atualizações futuras gratuitas com novas receitas e cardápios",
+                  "Acesso vitalício, acesse quando e onde quiser."
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm font-bold text-slate-700">
                     <CheckCircle2 className="text-brand-pink shrink-0" size={18} />
@@ -711,7 +713,7 @@ export default function App() {
               </div>
 
               <div className="mb-8">
-                <p className="text-lg line-through text-slate-400 mb-1">De R$ 57,00</p>
+                <p className="text-lg line-through text-slate-400 mb-1">De R$ 67,00</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-5xl">
                     R$ 27,90
