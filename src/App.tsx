@@ -713,7 +713,7 @@ export default function App() {
               </div>
 
               <div className="mb-8">
-                <p className="text-lg line-through text-slate-400 mb-1">De R$ 67,00</p>
+                <p className="text-lg line-through text-slate-400 mb-1">De R$ 97,90</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-5xl">
                     R$ 27,90
@@ -747,7 +747,7 @@ export default function App() {
                       viewport={{ once: true }}
                       className="text-8xl md:text-[120px] font-display font-black leading-none bg-clip-text text-transparent bg-gradient-to-b from-yellow-100 via-brand-yellow to-yellow-700 drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)]"
                     >
-                      7
+                      30
                     </motion.span>
                     <div className="flex flex-col items-center -mt-2">
                       <span className="text-white font-black text-sm md:text-base tracking-tighter leading-none">DIAS DE</span>
@@ -768,7 +768,7 @@ export default function App() {
                     <h3 className="text-2xl md:text-4xl font-display font-black text-white leading-[0.9] uppercase">
                       Garantia <br />
                       <span className="text-brand-yellow">Blindada</span> de <br />
-                      7 Dias
+                      30 Dias
                     </h3>
                   </div>
                 </div>
@@ -776,7 +776,7 @@ export default function App() {
                 {/* Texto Explicativo */}
                 <div className="flex-1 text-center md:text-left border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-12">
                   <p className="text-lg text-white/90 leading-relaxed font-medium mb-4">
-                    Experimente sem riscos! Se em até 7 dias você não estiver amando as receitas, eu devolvo 100% do seu investimento. Sem perguntas, sem burocracia.
+                    Experimente sem riscos! Se em até 30 dias você não estiver amando as receitas, eu devolvo 100% do seu investimento. Sem perguntas, sem burocracia.
                   </p>
                   <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                     <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-brand-yellow font-bold text-sm">
