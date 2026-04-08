@@ -716,7 +716,7 @@ export default function App() {
                 <p className="text-lg line-through text-slate-400 mb-1">De R$ 97,90</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-5xl">
-                    R$ 27,90
+                    R$ 37,90
                   </span>
                 </div>
               </div>
