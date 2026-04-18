@@ -1,16 +1,15 @@
-INSTRUÇÕES PARA HOSPEDAGEM NO HOSTINGER (USANDO O ZIP):
+INSTRUÇÕES PARA HOSPEDAGEM NO HOSTINGER:
 
-1. Baixe o arquivo .ZIP do projeto.
-2. Abra o arquivo .ZIP no seu computador.
-3. Procure pela pasta chamada 'dist'.
-4. Entre na pasta 'dist'. Você verá os seguintes itens:
-   - index.html
-   - .htaccess
-   - assets (pasta)
+OPÇÃO A: USANDO O ARQUIVO ZIP (Mais fácil e rápido)
+1. Baixe o arquivo .ZIP do projeto aqui no editor.
+2. Extraia o ZIP e entre na pasta 'dist'.
+3. No painel da Hostinger, abra o 'Gerenciador de Arquivos' e entre na 'public_html'.
+4. Envie todo o CONTEÚDO da pasta 'dist' para dentro da 'public_html'.
+   - O arquivo 'index.html' deve ficar direto na pasta principal.
 
-5. No Gerenciador de Arquivos do Hostinger, entre na pasta 'public_html'.
-6. Envie (Upload) TUDO o que está DENTRO da pasta 'dist' para a 'public_html'.
+OPÇÃO B: VIA GITHUB
+1. Crie um repositório no GitHub e suba todos os arquivos do projeto.
+2. IMPORTANTE: Para hospedagem comum (Shared), você deve rodar o comando 'npm run build' localmente e garantir que a pasta 'dist' seja enviada ou use uma 'GitHub Action' para automatizar o envio para o FTP da Hostinger.
+3. O site já está configurado com '.htaccess' e 'base path' corretos para aceitar seu domínio próprio.
 
-IMPORTANTE: Não envie a pasta 'dist' inteira. Envie apenas o CONTEÚDO dela. No final, o arquivo 'index.html' deve estar diretamente dentro da 'public_html'.
-
-O arquivo .htaccess já está incluído na pasta 'dist' para garantir que seu site funcione perfeitamente.
+DICA: Se os links não funcionarem ou derem erro 404 ao atualizar, verifique se o arquivo '.htaccess' foi enviado para a raiz da 'public_html'.

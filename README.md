@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Lancheira Saudável - Landing Page
 
-# Run and deploy your AI Studio app
+Este projeto foi desenvolvido com React, Vite e Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## Como hospedar na Hostinger (via GitHub)
 
-View your app in AI Studio: https://ai.studio/apps/c014ea24-5a2d-4504-8869-5b4f03501747
+Se você está usando a Hostinger e quer publicar este site usando o seu repositório do GitHub, siga estas opções:
 
-## Run Locally
+### Opção 1: Via GitHub Actions (Recomendado)
+Esta é a melhor forma. Sempre que você fizer um `push` para o GitHub, o site será compilado e enviado automaticamente para a Hostinger.
 
-**Prerequisites:**  Node.js
+1. No repositório, vá em **Actions** > **New workflow**.
+2. Configure um workflow para fazer o build (`npm install && npm run build`).
+3. Use uma action de FTP (como `SamKirkland/FTP-Deploy-Action`) para enviar a pasta `dist/` para a sua `public_html` na Hostinger.
 
+### Opção 2: Manual via ZIP (Mais simples)
+1. No seu computador, execute `npm install` e depois `npm run build`.
+2. Uma pasta `dist` será criada.
+3. Compacte o conteúdo da pasta `dist` (não a pasta em si, mas os arquivos dentro dela).
+4. Suba o arquivo ZIP para a pasta `public_html` pelo Gerenciador de Arquivos da Hostinger e extraia lá.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Configurações Importantes já aplicadas:
+- **Routing**: O arquivo `.htaccess` na pasta `public` garante que os links funcionem corretamente no servidor Apache da Hostinger.
+- **Base Path**: O projeto está configurado para rodar na raiz do domínio (`base: '/'`).
+
+---
+Desenvolvido com ❤️
