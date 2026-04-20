@@ -1,15 +1,14 @@
 INSTRUÇÕES PARA HOSPEDAGEM NO HOSTINGER:
 
-OPÇÃO A: USANDO O ARQUIVO ZIP (Mais fácil e rápido)
-1. Baixe o arquivo .ZIP do projeto aqui no editor.
-2. Extraia o ZIP e entre na pasta 'dist'.
-3. No painel da Hostinger, abra o 'Gerenciador de Arquivos' e entre na 'public_html'.
-4. Envie todo o CONTEÚDO da pasta 'dist' para dentro da 'public_html'.
-   - O arquivo 'index.html' deve ficar direto na pasta principal.
+🚨 CORREÇÃO PARA ERRO 404:
+Eu atualizei as configurações para usar "Caminhos Relativos". Isso resolve o erro de "Failed to load resource" que você estava vendo.
 
-OPÇÃO B: VIA GITHUB
-1. Crie um repositório no GitHub e suba todos os arquivos do projeto.
-2. IMPORTANTE: Para hospedagem comum (Shared), você deve rodar o comando 'npm run build' localmente e garantir que a pasta 'dist' seja enviada ou use uma 'GitHub Action' para automatizar o envio para o FTP da Hostinger.
-3. O site já está configurado com '.htaccess' e 'base path' corretos para aceitar seu domínio próprio.
+OPÇÃO A: USANDO O ARQUIVO ZIP (Método Infalível)
+1. Clique no ícone de "Download" (ou no menu superior > Export) para baixar o .ZIP.
+2. Extraia o ZIP no seu computador.
+3. IMPORTANTE: Entre na pasta 'dist' que foi criada.
+4. No painel da Hostinger (Gerenciador de Arquivos), abra a 'public_html'.
+5. APAGUE tudo o que estiver lá dentro atualmente.
+6. Envie apenas o CONTEÚDO que está dentro da pasta 'dist' (arquivos index.html, .htaccess e a pasta assets) para a 'public_html'.
 
-DICA: Se os links não funcionarem ou derem erro 404 ao atualizar, verifique se o arquivo '.htaccess' foi enviado para a raiz da 'public_html'.
+DICA: Se os recursos ainda não carregarem, certifique-se de que o arquivo '.htaccess' está visível na pasta 'public_html'. Em alguns sistemas, arquivos que começam com ponto (.) ficam ocultos por padrão.
