@@ -674,7 +674,7 @@ export default function App() {
               <CTAButton 
                 className="w-full py-4 text-lg" 
                 pulse 
-                href="https://checkout.materialinteligente.com/VCCL1O8SCV4L"
+                href="https://checkout.compraragora.site/VCCL1O8SCV4L"
               >
                 QUERO O BÁSICO
               </CTAButton>
@@ -724,7 +724,7 @@ export default function App() {
               <CTAButton 
                 className="w-full py-4 text-xl" 
                 pulse 
-                href="https://checkout.materialinteligente.com/VCCL1O8SCV6C"
+                href="https://checkout.compraragora.site/VCCL1O8SCV6C"
               >
                 QUERO O COMPLETO!
               </CTAButton>
