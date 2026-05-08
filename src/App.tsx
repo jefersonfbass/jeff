@@ -221,14 +221,14 @@ const CountdownTimer = () => {
 
 const PurchaseNotification = () => {
   const purchases = [
-    { name: "Ana Lucía", plan: "Acceso Completo", city: "Madrid, ES" },
-    { name: "Carla M.", plan: "Acceso Completo", city: "Ciudad de México, MX" },
-    { name: "Juliana S.", plan: "Acceso Completo", city: "Bogotá, CO" },
-    { name: "Mariana F.", plan: "Acceso Completo", city: "Buenos Aires, AR" },
-    { name: "Patrícia L.", plan: "Acceso Completo", city: "Santiago, CL" },
-    { name: "Renata G.", plan: "Acceso Completo", city: "Lima, PE" },
-    { name: "Beatriz C.", plan: "Acceso Completo", city: "Quito, EC" },
-    { name: "Fernanda R.", plan: "Acceso Completo", city: "Caracas, VE" },
+    { name: "Ana Lucía", plan: "Acceso Completo" },
+    { name: "Carla M.", plan: "Acceso Completo" },
+    { name: "Juliana S.", plan: "Acceso Completo" },
+    { name: "Mariana F.", plan: "Acceso Completo" },
+    { name: "Patrícia L.", plan: "Acceso Completo" },
+    { name: "Renata G.", plan: "Acceso Completo" },
+    { name: "Beatriz C.", plan: "Acceso Completo" },
+    { name: "Fernanda R.", plan: "Acceso Completo" },
   ];
 
   const [current, setCurrent] = React.useState(0);
@@ -237,7 +237,7 @@ const PurchaseNotification = () => {
   React.useEffect(() => {
     const showNotification = () => {
       setVisible(true);
-      setTimeout(() => setVisible(false), 4000); // Fica visível por apenas 4 segundos
+      setTimeout(() => setVisible(false), 4000); // Se mantiene visible por 4 segundos
     };
 
     const initialTimer = setTimeout(showNotification, 3000);
@@ -272,9 +272,6 @@ const PurchaseNotification = () => {
             <p className="text-[10px] text-brand-yellow font-bold">
               {purchases[current].plan}
             </p>
-            <p className="text-[9px] text-white/80 font-medium">
-              {purchases[current].city}
-            </p>
           </div>
         </motion.div>
       )}
@@ -286,7 +283,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <PurchaseNotification />
-      {/* Faixa de Urgência */}
+      {/* Barra de Urgencia */}
       <div className="bg-brand-yellow py-2 px-4 text-center flex items-center justify-center gap-2 font-bold text-red-600 sticky top-0 z-50 shadow-md">
         <Clock size={18} className="animate-pulse" />
         <span className="text-sm md:text-base uppercase tracking-tight animate-pulse">Descuento válido solo hoy.</span>
@@ -709,7 +706,7 @@ export default function App() {
                       viewport={{ once: true }}
                       className="text-8xl md:text-[120px] font-display font-black leading-none bg-clip-text text-transparent bg-gradient-to-b from-yellow-100 via-brand-yellow to-yellow-700 drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)]"
                     >
-                      30
+                      7
                     </motion.span>
                     <div className="flex flex-col items-center -mt-2">
                       <span className="text-white font-black text-sm md:text-base tracking-tighter leading-none uppercase">Días de</span>
@@ -730,7 +727,7 @@ export default function App() {
                     <h3 className="text-2xl md:text-4xl font-display font-black text-white leading-[0.9] uppercase">
                       Garantía <br />
                       <span className="text-brand-yellow">Blindada</span> de <br />
-                      30 Días
+                      7 Días
                     </h3>
                   </div>
                 </div>
@@ -738,7 +735,7 @@ export default function App() {
                 {/* Texto Explicativo */}
                 <div className="flex-1 text-center md:text-left border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-12">
                   <p className="text-lg text-white/90 leading-relaxed font-medium mb-4">
-                    ¡Pruébalo sin riesgos! Si en 30 días no estás amando las recetas, te devuelvo el 100% de tu inversión. Sin preguntas, sin burocracia.
+                    ¡Pruébalo sin riesgos! Si en 7 días no estás amando las recetas, te devuelvo el 100% de tu inversión. Sin preguntas, sin burocracia.
                   </p>
                   <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                     <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-brand-yellow font-bold text-sm">
