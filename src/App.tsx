@@ -140,7 +140,7 @@ const CTAButton = ({ children, className = "", pulse = false, onClick, href }: {
           target="_blank"
           rel="noopener noreferrer"
           data-utmify-checkout="true"
-          id={href.includes('V4L') ? 'checkout-basico' : 'checkout-completo'}
+          id="checkout-button"
           className={`${baseStyles} inline-block w-full no-underline ${className}`}
         >
           {children}
