@@ -682,7 +682,7 @@ export default function App() {
               <CTAButton 
                 className="w-full py-4 text-xl" 
                 pulse 
-                href="https://pay.hotmart.com/G105737527Q"
+                href="https://pay.hotmart.com/G105737527Q?checkoutMode=10"
               >
                 ¡QUIERO ACCEDER AHORA!
               </CTAButton>
