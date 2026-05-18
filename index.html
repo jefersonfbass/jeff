@@ -2,32 +2,43 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <script>
-      window.pixelId = "69fe67a1bd3ec4d0d0904c2e";
-    </script>
+    <!-- UTmify Script -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
       data-utmify-prevent-subids
       async
       defer
     ></script>
-    <script
-      src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
-      async
-      defer
-    ></script>
+    <!-- Pixel Script -->
+    <script>
+      window.pixelId = "69fe67a1bd3ec4d0d0904c2e";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
     <!-- Manual Trigger for Tracking -->
     <script>
       document.addEventListener('click', function(e) {
         var target = e.target.closest('[data-utmify-checkout]');
         if (target) {
+          console.log('Checkout click detected, tracking events...');
+          
           // Track UTMify
           if (window.pixel && typeof window.pixel.track === 'function') {
             window.pixel.track('InitiateCheckout');
+            console.log('UTMify InitiateCheckout tracked');
+          } else {
+            console.warn('UTMify pixel script not loaded yet');
           }
+
           // Track Facebook
           if (typeof fbq === 'function') {
             fbq('track', 'InitiateCheckout');
+            console.log('Facebook InitiateCheckout tracked');
+          } else {
+            console.warn('Facebook Pixel (fbq) not loaded yet');
           }
         }
       });

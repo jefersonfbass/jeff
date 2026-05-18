@@ -30,38 +30,38 @@ const recipes = [
   {
     title: "Muffins de Yogur con Fresas",
     category: "Dulce Saludable",
-    img: "https://i.ibb.co/chDs7dDc/bolinhos-de-iogurte-com-morango-e-cranberry-01-730x480.png",
+    img: "https://wsrv.nl/?url=https://i.ibb.co/chDs7dDc/bolinhos-de-iogurte-com-morango-e-cranberry-01-730x480.png&output=webp",
     desc: "Esponjosos, nutritivos y com el sabor irresistible de la fruta fresca."
   },
   {
     title: "Empanaditas Sin Gluten",
     category: "Salado",
-    img: "https://i.ibb.co/LDZ7RxLB/empadinha-sem-gluten-730x480.jpg",
+    img: "https://wsrv.nl/?url=https://i.ibb.co/LDZ7RxLB/empadinha-sem-gluten-730x480.jpg&output=webp",
     desc: "Masa que se deshace en la boca y relleno súper saludable."
   },
   {
     title: "Meriendas Coloridas",
     category: "Variedad",
-    img: "https://i.ibb.co/cSmmbSJL/images-1.jpg",
+    img: "https://wsrv.nl/?url=https://i.ibb.co/cSmmbSJL/images-1.jpg&output=webp",
     desc: "Opciones prácticas para variar el menú de la semana."
   },
   {
     title: "Frutas Divertidas",
     category: "Snack",
-    img: "https://i.ibb.co/tM1czCKV/images-2.jpg",
+    img: "https://wsrv.nl/?url=https://i.ibb.co/tM1czCKV/images-2.jpg&output=webp",
     desc: "Presentación creativa que incentiva el consumo de frutas."
   },
   {
     title: "Muffins Nutritivos",
     category: "Salado",
-    img: "https://i.ibb.co/d0hWFj0W/images.jpg",
+    img: "https://wsrv.nl/?url=https://i.ibb.co/d0hWFj0W/images.jpg&output=webp",
     desc: "Perfectos para llevar en la lonchera y comer a cualquier hora."
   },
   {
     title: "Pan de Bono Casero",
     category: "Clásico",
     img: "https://i.ibb.co/ZR0zpyq3/Pao-de-queijo-1.webp",
-    desc: "El favorito de los niños en una versión mucho más saludable."
+    desc: "El favorito de los niños en una version mucho más saludable."
   }
 ];
 
@@ -318,7 +318,7 @@ export default function App() {
           <div className="relative mb-12 px-4 md:px-0">
             <div className="w-full max-w-[280px] sm:max-w-md md:max-w-lg relative z-10 mx-auto">
               <img 
-                src="https://i.ibb.co/yBfZN5wg/Chat-GPT-Image-7-de-mai-de-2026-14-43-50-removebg-preview.png" 
+                src="https://wsrv.nl/?url=https://i.ibb.co/yBfZN5wg/Chat-GPT-Image-7-de-mai-de-2026-14-43-50-removebg-preview.png&output=webp" 
                 alt="Especialista" 
                 className="w-full h-auto rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
@@ -562,38 +562,38 @@ export default function App() {
               {
                 name: "Sofía",
                 role: "Madre de Pedro",
-                text: "Empecé a hacer las recetas de la lonchera y mi hijo volvió hoy con la lonchera vacía 😍 nunca había pasado esto jaja",
-                img: "https://i.ibb.co/SDZPrMLS/1f32a36a38c347d28f36ae1ea51a9fa1.jpg"
+                text: "Empecé a hacer las receitas de la lonchera y mi hijo volvió hoy con la lonchera vacía 😍 nunca había pasado esto jaja",
+                img: "https://wsrv.nl/?url=https://i.ibb.co/SDZPrMLS/1f32a36a38c347d28f36ae1ea51a9fa1.jpg&output=webp"
               },
               {
                 name: "Valentina",
                 role: "Alumna del Ebook",
                 text: "Lo compré ayer y ya probé 2 recetas hoy temprano. ¡Mucho más fácil de lo que imaginaba!",
-                img: "https://i.ibb.co/jPxrF11T/68a968808f8951a151f98e4722bf10e7.jpg"
+                img: "https://wsrv.nl/?url=https://i.ibb.co/jPxrF11T/68a968808f8951a151f98e4722bf10e7.jpg&output=webp"
               },
               {
                 name: "Camila",
                 role: "Madre preocupada",
                 text: "Mi hijo es súper exigente para comer y ya le gustaron dos recetas",
-                img: "https://i.ibb.co/F4szyYnh/701d4aa7766ae9564a082518821ad47a.jpg"
+                img: "https://wsrv.nl/?url=https://i.ibb.co/F4szyYnh/701d4aa7766ae9564a082518821ad47a.jpg&output=webp"
               },
               {
                 name: "Lucía",
                 role: "Madre de Gabi",
                 text: "Me encantó porque son recetas simples de verdad. Nada complicado.",
-                img: "https://i.ibb.co/4n6vb4WT/fotoria-ai-professional-headshots-hero12.jpg"
+                img: "https://wsrv.nl/?url=https://i.ibb.co/4n6vb4WT/fotoria-ai-professional-headshots-hero12.jpg&output=webp"
               },
               {
                 name: "Daniela",
                 role: "Emprendedora",
                 text: "Hice las recetas el domingo y ya dejé varias listas para la semana. Salvó mi rutina.",
-                img: "https://i.ibb.co/BHhCf45S/5dc455c3dc47d62f833c362a2c59c5ed.jpg"
+                img: "https://wsrv.nl/?url=https://i.ibb.co/BHhCf45S/5dc455c3dc47d62f833c362a2c59c5ed.jpg&output=webp"
               },
               {
                 name: "Mariana",
                 role: "Madre de dos",
                 text: "¡Tiene muchísimas recetas! Ni me imaginé que tendría tantas opciones.",
-                img: "https://i.ibb.co/KzKn69YY/images.jpg"
+                img: "https://wsrv.nl/?url=https://i.ibb.co/KzKn69YY/images.jpg&output=webp"
               }
             ].map((testimonial, i) => (
               <motion.div
@@ -674,7 +674,7 @@ export default function App() {
                 <p className="text-lg line-through text-slate-400 mb-1">De US$ 19,97</p>
                 <div className="flex flex-col items-center">
                   <span className="text-brand-pink font-display font-black text-5xl">
-                    US$ 7,97
+                    US$ 5,97
                   </span>
                 </div>
               </div>
