@@ -306,12 +306,6 @@ export default function App() {
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-display font-black mb-2 drop-shadow-lg leading-tight uppercase tracking-tight">
               +160 recetas para una lonchera saludable
             </h1>
-            <p className="font-script text-2xl md:text-4xl text-brand-yellow mb-4">
-              Salud y practicidad día a día
-            </p>
-            <p className="text-sm md:text-base font-bold opacity-80">
-              por Nutri Mariana Silva
-            </p>
           </div>
 
           {/* Foto da especialista */}
@@ -550,33 +544,9 @@ export default function App() {
       </section>
 
       {/* 🟤 4) SEÇÃO O QUE VOCÊ VAI RECEBER */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-24 px-4 bg-[#fbf9f6]">
         <div className="max-w-6xl mx-auto text-center">
-          <SectionTitle>En resumen, recibirás:</SectionTitle>
-
-          <div className="flex justify-center mb-12">
-            {[
-              { title: "Recetas dulces y saladas", icon: <Utensils className="text-brand-pink" size={32} />, color: "bg-pink-50" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-8 rounded-3xl shadow-xl border-2 border-slate-200 flex flex-col items-center text-center hover:shadow-2xl hover:border-brand-pink/30 transition-all relative overflow-hidden w-full max-w-sm"
-              >
-                <div className={`mb-6 p-4 ${item.color} rounded-2xl`}>
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-display font-black text-slate-900 leading-tight">
-                  {item.title}
-                </h3>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="mb-12 mt-16 flex justify-center px-4">
+          <div className="mb-12 flex justify-center px-4">
             <motion.div 
               initial={{ scale: 0.95, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
