@@ -301,10 +301,10 @@ export default function App() {
           <div className="w-64 h-64 rounded-full border-8 border-white"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto flex flex-col items-center relative z-10">
-          <div className="text-center text-white mb-12">
-            <h1 className="text-4xl md:text-7xl font-display font-black mb-2 drop-shadow-lg">
-              LONCHERA SALUDABLE
+        <div className="max-w-6xl mx-auto flex flex-col items-center relative z-10 w-full px-4">
+          <div className="text-center text-white mb-12 max-w-5xl w-full">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-display font-black mb-2 drop-shadow-lg leading-tight uppercase tracking-tight">
+              +160 recetas para una lonchera saludable
             </h1>
             <p className="font-script text-2xl md:text-4xl text-brand-yellow mb-4">
               Salud y practicidad día a día
