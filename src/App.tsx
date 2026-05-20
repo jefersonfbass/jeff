@@ -353,46 +353,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* 🟡 2) SEÇÃO DE IDENTIFICAÇÃO (FUNDO CLARO) */}
-      <section className="py-24 px-4 bg-slate-50">
-        <div className="max-w-4xl mx-auto">
-          <SectionTitle>
-            ¿Te identificas con alguna de estas situaciones?
-          </SectionTitle>
-
-          <div className="space-y-4 mb-16">
-            {[
-              { text: "No tengo idea de qué poner en la lonchera hoy...", color: "bg-blue-500", rotate: "-1deg" },
-              { text: "Mi hijo solo quiere comer galletas rellenas y jugos de cajita.", color: "bg-red-500", rotate: "1deg" },
-              { text: "Gasto mucho dinero en snacks procesados del mercado.", color: "bg-brand-yellow text-slate-900", rotate: "-0.5deg" },
-              { text: "Siento culpa por no ofrecer una alimentación saludable.", color: "bg-green-500", rotate: "0.8deg" },
-              { text: "No tengo tiempo para cocinar recetas complicadas.", color: "bg-brand-pink", rotate: "-1.2deg" },
-              { text: "La lonchera siempre vuelve llena porque no comió nada.", color: "bg-brand-orange", rotate: "0.5deg" },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                style={{ transform: `rotate(${item.rotate})` }}
-                className={`${item.color} p-6 rounded-xl shadow-strong text-white font-display font-bold text-xl md:text-2xl text-center`}
-              >
-                {item.text}
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <h3 className="text-3xl md:text-4xl font-display font-black text-brand-pink mb-4">
-              Si dijiste que SÍ a alguna de estas...
-            </h3>
-            <p className="text-xl md:text-2xl font-medium text-slate-600">
-              ¡Esta guía fue creada pensando exactamente en ti y en la salud de tu pequeño!
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* 🟠 3) SEÇÃO PROMESSA (FUNDO LARANJA) */}
       <section className="py-24 bg-brand-orange text-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -446,45 +406,6 @@ export default function App() {
         <RecipeCarousel />
       </section>
 
-      {/* 🟤 4) SEÇÃO O QUE VOCÊ VAI RECEBER */}
-      <section className="py-24 px-4 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <SectionTitle>En resumen, recibirás:</SectionTitle>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {[
-              { title: "Recetas dulces y saladas", icon: <Utensils className="text-brand-pink" size={32} />, color: "bg-pink-50", isBonus: false },
-              { title: "Recetitas con frutas y vegetales", icon: <Apple className="text-green-500" size={32} />, color: "bg-green-50", isBonus: true },
-              { title: "Bebidas divertidas y saludables", icon: <Coffee className="text-blue-500" size={32} />, color: "bg-blue-50", isBonus: true },
-              { title: "Delicias sin azúcar y harinas refinadas", icon: <Ban className="text-red-500" size={32} />, color: "bg-red-50", isBonus: true },
-              { title: "Delicias veganas", icon: <Leaf className="text-emerald-500" size={32} />, color: "bg-emerald-50", isBonus: true },
-              { title: "Mix de recetas para alérgicos", icon: <ShieldCheck className="text-brand-yellow" size={32} />, color: "bg-yellow-50", isBonus: true },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-8 rounded-3xl shadow-xl border-2 border-slate-200 flex flex-col items-center text-center hover:shadow-2xl hover:border-brand-pink/30 transition-all relative overflow-hidden"
-              >
-                {item.isBonus && (
-                  <div className="absolute top-3 right-[-35px] bg-brand-pink text-white text-[10px] font-bold py-1 px-10 rotate-45 shadow-sm">
-                    BONO
-                  </div>
-                )}
-                <div className={`mb-6 p-4 ${item.color} rounded-2xl`}>
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-display font-black text-slate-900 leading-tight">
-                  {item.title}
-                </h3>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 🌟 NOVA SEÇÃO PERSUASIVA (ESTILO IMAGEM) */}
       <section id="por-que-elegir" className="py-24 px-4 bg-[#f5a623] relative overflow-hidden">
         {/* Elementos decorativos sutis */}
@@ -510,7 +431,7 @@ export default function App() {
           <div className="flex flex-col gap-4 mb-20">
             {[
               { text: "Enviar meriendas que a tu hijo realmente le gusten y se coma todo." },
-              { text: "Reducir (o enviar a cero) los ultraprocesados en la lonchera." },
+              { text: "Reducir (o enviar a cero) los ultraprocesados in la lonchera." },
               { text: "Tener la tranquilidad de saber que ofreces comida que nutre de verdad." },
               { text: "Dejar de romperte la cabeza cada día pensando en qué enviar." },
               { text: "Sentir orgullo por cuidar la alimentación de tu familia con facilidad." },
@@ -622,6 +543,78 @@ export default function App() {
                 <p className="text-slate-600 italic leading-relaxed">
                   "{testimonial.text}"
                 </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 🟤 4) SEÇÃO O QUE VOCÊ VAI RECEBER */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <SectionTitle>En resumen, recibirás:</SectionTitle>
+
+          <div className="flex justify-center mb-12">
+            {[
+              { title: "Recetas dulces y saladas", icon: <Utensils className="text-brand-pink" size={32} />, color: "bg-pink-50" }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white p-8 rounded-3xl shadow-xl border-2 border-slate-200 flex flex-col items-center text-center hover:shadow-2xl hover:border-brand-pink/30 transition-all relative overflow-hidden w-full max-w-sm"
+              >
+                <div className={`mb-6 p-4 ${item.color} rounded-2xl`}>
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-display font-black text-slate-900 leading-tight">
+                  {item.title}
+                </h3>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mb-12 mt-16 flex justify-center px-4">
+            <motion.div 
+              initial={{ scale: 0.95, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              className="bg-brand-pink text-white px-8 py-4 md:py-5 rounded-2xl md:rounded-3xl shadow-strong border-2 border-pink-400 max-w-3xl w-full transform -rotate-1 hover:rotate-0 transition-all duration-300 flex items-center justify-center gap-3"
+            >
+              <span className="text-3xl md:text-4xl animate-bounce">🎁</span>
+              <h3 className="text-lg md:text-2xl font-display font-black tracking-tight leading-tight uppercase">
+                Bonos exclusivos para quienes adquieran hoy
+              </h3>
+            </motion.div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {[
+              { title: "Recetitas con frutas y vegetales", icon: <Apple className="text-green-500" size={32} />, color: "bg-green-50" },
+              { title: "Bebidas divertidas y saludables", icon: <Coffee className="text-blue-500" size={32} />, color: "bg-blue-50" },
+              { title: "Delicias sin azúcar y harinas refinadas", icon: <Ban className="text-red-500" size={32} />, color: "bg-red-50" },
+              { title: "Delicias veganas", icon: <Leaf className="text-emerald-500" size={32} />, color: "bg-emerald-50" },
+              { title: "Mix de receitas para alérgicos", icon: <ShieldCheck className="text-brand-yellow" size={32} />, color: "bg-yellow-50" },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white p-8 rounded-3xl shadow-xl border-2 border-slate-200 flex flex-col items-center text-center hover:shadow-2xl hover:border-brand-pink/30 transition-all relative overflow-hidden"
+              >
+                <div className="absolute top-3 right-[-35px] bg-brand-pink text-white text-[10px] font-bold py-1 px-10 rotate-45 shadow-sm">
+                  BONO
+                </div>
+                <div className={`mb-6 p-4 ${item.color} rounded-2xl`}>
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-display font-black text-slate-900 leading-tight">
+                  {item.title}
+                </h3>
               </motion.div>
             ))}
           </div>
