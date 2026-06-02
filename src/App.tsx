@@ -23,7 +23,8 @@ import {
   Smile,
   Layers,
   Sparkles,
-  ChevronDown
+  ChevronDown,
+  X
 } from 'lucide-react';
 
 const recipes = [
